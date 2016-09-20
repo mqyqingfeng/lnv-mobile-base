@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* 规则 */
+
+@import "helper/_rules";
+@import "sprite/_sprite";
+
+/* 服务工单列表页面 */
+
+.main {
+	padding: 20px;
+
+}
+
+.icon_lists {
+  @include center(700px);
+}
+//字体图标示例
+.icon_lists li{
+  float:left;
+  width: 100px;
+  height:100px;
+  text-align: center;
+}
+.icon_lists .icon{
+  font-size: 42px;
+  line-height: 100px;
+  margin: 10px 0;
+  color:#333;
+  -webkit-transition: font-size 0.25s ease-out 0s;
+  -moz-transition: font-size 0.25s ease-out 0s;
+  transition: font-size 0.25s ease-out 0s;
+
+}
+.icon_lists .icon:hover{
+  font-size: 100px;
+}
+
+
+.base_list {
+	text-align: center;
+  font-size: 26px;
+}
+
+.btn_wrap {
+	margin-top: 20px;
+}
+
+.sprite-list {
+  @include center(600px);
+}
+
+.sprite {
+  width: 100px;
+  height: 80px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sprite-item1 {
+  @include sprite-pic1;
+}
+
+.sprite-item2 {
+  @include sprite-pic2;
+}
+
+.sprite-item3 {
+  @include sprite-pic3;
+}
+
+.sprite-item4 {
+  @include sprite-pic4;
+}
+
+.sprite-item5 {
+  @include sprite-pic5;
+}
+
+.sprite-item6 {
+  @include sprite-pic6;
+}

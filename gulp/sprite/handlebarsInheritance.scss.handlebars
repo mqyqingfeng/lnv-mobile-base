@@ -1,0 +1,17 @@
+{{#extend "scss"}}
+{{#content "sprites"}}
+{{#each sprites}}
+@mixin sprite-{{name}} {
+    background-position: {{offset_x}}px {{offset_y}}px;
+}
+
+{{/each}}
+{{/content}}
+{{#content "spritesheet"}}
+.sprite {
+    background-image: url('../img/{{{spritesheet.escaped_image}}}');
+    background-repeat: no-repeat;
+    background-size: {{spritesheet.width}}px {{spritesheet.height}}px;
+}
+{{/content}}
+{{/extend}}

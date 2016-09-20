@@ -1,0 +1,20 @@
+
+    {{#each data}}
+    <li href="{{itemLink}}" class="flag">
+        <a class="figure flag-item" href="{{itemLink}}"> <img src="{{imgSrc}}" alt=""> </a>
+        <div class="figcaption flag-item">
+            <div class="flag-title">
+                <a href="{{itemLink}}" title="">{{poductName}}</a>
+            </div>
+            <div class="flag-price">
+                <span>双22价</span>
+                <strong>¥{{price}}</strong>
+                <small>({{preferential}})</small>
+            </div>
+            <div class="flag-type">
+                {{activityType}}
+            </div>
+            <a class="flag-btn" href="{{shopLink}}">{{activeName}}</a>
+        </div>
+    </li>
+    {{/each}}

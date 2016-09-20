@@ -1,0 +1,43 @@
+{
+  "name": "mobilebase",
+  "version": "1.4.0",
+  "description": "Lenovo Service MobileBase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mobilebase",
+    "lenovo"
+  ],
+  "author": "Kevin-maxiu",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-constructer": "^0.0.3",
+    "gulp-if": "^2.0.1",
+    "gulp-inline-source": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sequence": "^0.4.5",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.0",
+    "gulp-util": "^3.0.7",
+    "postcss-px2rem": "^0.3.0",
+    "gulp-file-include": "^0.14.0",
+    "gulp-rev-append-all": "^0.1.6",
+    "gulp-handlebars-precompile": "^1.0.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp.spritesmith": "^6.2.1",
+    "vinyl-buffer": "^1.0.0",
+    "merge-stream": "^1.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-cheerio": "^0.6.2"
+  }
+}

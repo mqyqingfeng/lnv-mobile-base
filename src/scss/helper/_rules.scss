@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-02 15:21:57
+*/
+
+$mc: #fc5154; //main_color 主色
+$lc: #e6e6e6; //line_color 分割线颜色
+$tc: #6a6a6a; //text_color 文字颜色
+
+/**
+ * 左右margin为auto
+ */
+
+%mauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**
+ * 水平居中
+ * @param  {number} $width 设置宽度,默认90%
+ */
+
+@mixin center($width:90%) {
+    width: $width;
+    @extend %mauto;
+}

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-24 11:25:52
+*/
+
+body {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #333333;
+    background-color: white;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.noscroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.loading {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #cccccc;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #cccccc;
+}

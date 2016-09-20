@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/*
+* @Author: kevin
+* @Date:   2016-04-05 13:37:33
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-08-02 15:20:56
+*/
+
+
+/**
+ * 隐藏元素
+ */
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+
+/**
+ * 弹性图片
+ */
+
+.lnv-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/**
+ * 清除浮动
+ */
+
+.clear {
+    clear: both;
+}
+
+
+/**
+ * 解決高度塌陷問題
+ */
+
+.clearfix:after {
+    content: ' ';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/**
+ * 单行文本超过宽度显示为三个点
+ */
+
+.dot {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/**
+ * 三角符号
+ */
+
+.lnv-triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}

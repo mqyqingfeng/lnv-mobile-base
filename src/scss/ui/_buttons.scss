@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*
+* @Author: kevin
+* @Date:   2015-11-30 19:14:34
+* @Last Modified by:   kevin
+* @Last Modified time: 2016-09-04 13:53:25
+*/
+
+/* example 根据项目进行完善*/
+
+$btn_default_gap: 15px;
+$btn_font_size: 24px;
+$btn_font_color: #fff;
+$btn_height: 60px;
+$btn_border_radius: 8px;
+
+$btn_active_font_color: rgba(255,255,255,.4);
+$btn_disabled_font_color: rgba(255,255,255,.6);
+
+$btn_primary_bg: #04BE02;
+$btn_primary_active_bg: #039702;
+
+$btn_warn_bg:#EF4F4F;
+$btn_warn_active_bg: #C13E3E;
+
+
+.lnv-btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: $btn_font_size;
+    text-align: center;
+    text-decoration: none;
+    color: $btn_font_color;
+    // line-height: $btn_height/$btn_font_size;
+    height: $btn_height;
+    line-height: $btn_height;
+    vertical-align: middle;
+    border-radius: $btn_border_radius;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.lnv-btn-disabled {
+    color: $btn_disabled_font_color;
+    &:active{
+        color: $btn_disabled_font_color;
+    }
+}
+
+.lnv-btn-primary {
+    background-color: $btn_primary_bg;
+    &:not(.lnv-btn-disabled):visited {
+        color: $btn_font_color;
+    }
+    &:not(.lnv-btn-disabled):active {
+        color: $btn_active_font_color;
+        background-color: $btn_primary_active_bg;
+    }
+}
+
+.lnv-btn-warn {
+    background-color: $btn_warn_bg;
+    &:not(.btn-disabled):visited {
+        color: $btn_font_color;
+    }
+    &:not(.lnv-btn-disabled):active {
+        color: $btn_active_font_color;
+        background-color: $btn_warn_active_bg;
+    }
+}
+
+.lnv-btn + .lnv-btn {
+    margin-top: $btn_default_gap;
+}
+
+button, input {
+    &.lnv-btn {
+        width: 100%;
+        border-width: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        &:focus {
+            outline: 0;
+        }
+    }
+}

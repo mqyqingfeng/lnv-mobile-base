@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>二级栏目-一级栏目-网站名称</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <!-- build:css combined/combined.css -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="widget/dialog/dialog.css">
+    <link rel="stylesheet" href="widget/loading/loading.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="css/index.css" inline>
+    <!-- 引入移动端适配方案 -->
+    <script src="static/js/flexible.js"></script>
+</head>
+
+<body>
+    <!-- loading -->
+    <div style="color: #76bf57" class="la-ball-atom la-3x loading" id="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- /loading -->
+
+    <!-- main -->
+    <div class="main hidden" id="container">
+        <!-- 字体图标示例 -->
+        <ul class="icon_lists clearfix">
+            <li>
+                <i class="icon">&#xe600;</i>
+            </li>
+            <li>
+                <i class="icon">&#xe601;</i>
+            </li>
+            <li>
+                <i class="icon">&#xe602;</i>
+            </li>
+            <li>
+                <i class="icon">&#xe603;</i>
+            </li>
+            <li>
+                <i class="icon">&#xe604;</i>
+            </li>
+            <li>
+                <i class="icon">&#xe605;</i>
+            </li>
+            <li>
+                <i class="icon">&#xe606;</i>
+            </li>
+        </ul>
+        <!-- /字体图标示例 -->
+
+        <!-- include功能示例 -->
+        @@include('include/item.html', {
+            "name": "MobileBase",
+            "team": "Lenovo eService FED",
+            "version": "v1.6.0",
+            "creatTime": "2015-11-15"
+        })
+        <!-- /include功能示例 -->
+
+        <!-- 雪碧图示例 -->
+        <ul class="sprite-list clearfix">
+            <li class="sprite sprite-item1"></li>
+            <li class="sprite sprite-item2"></li>
+            <li class="sprite sprite-item3"></li>
+            <li class="sprite sprite-item4"></li>
+            <li class="sprite sprite-item5"></li>
+            <li class="sprite sprite-item6"></li>
+        </ul>
+        <!-- /雪碧图示例 -->
+
+        <!-- btn wrap -->
+        <div class="btn_wrap">
+            <a class="lnv-btn lnv-btn-primary" id="submit_btn">点击按钮</a>
+            <a class="lnv-btn lnv-btn-warn" href="javascript:;" id="submit_warn_btn">按钮样式</a>
+            <a class="lnv-btn lnv-btn-primary lnv-btn-disabled" href="javascript:;">禁止样式</a>
+            <a class="lnv-btn lnv-btn-warn lnv-btn-disabled" href="javascript:;">禁止样式</a>
+        </div>
+        <!-- /btn wrap -->
+
+    </div>
+
+    <!-- /main -->
+
+    <script>
+    var global = {
+        rootUrl: "{$rooturl}", //root地址
+        openid: "{$openid}", //openid
+        bdloginUrl: "{:U('YiYatong/bdloginajax')}", //ajax请求地址
+        resultPage: "{:U('YiYatong/result')}" //跳转页面地址
+    }
+    </script>
+
+    <!-- build:js combined/combined.js -->
+    <script src="static/js/zepto.js"></script>
+    <script src="static/js/deferred.js"></script>
+    <script src="static/js/callbacks.js"></script>
+    <script src="static/js/touch.js"></script>
+    <script src="static/js/util.js"></script>
+    <script src="widget/dialog/dialog.js"></script>
+    <script src="widget/loading/loading.js"></script>
+    <!-- endbuild -->
+
+    <script src="static/js/handlebars.runtime-v4.0.5.js"></script>
+
+    <!--hbs "product.hbs"-->
+    <!--hbs "sell.hbs"-->
+
+    <script src="js/index.js" inline></script>
+    <script>
+    $(function() {
+
+        Project.init();
+
+        //页面加载完毕显示主内容
+        $("#loading").addClass("hidden")
+        $("#container").removeClass("hidden");
+
+    })
+    </script>
+
+</body>
+
+</html>
