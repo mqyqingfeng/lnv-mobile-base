@@ -1,8 +1,8 @@
 /*
  * @Author: kevin
  * @Date:   2015-11-13 11:46:23
- * @Last Modified by:   MiaoQingyu
- * @Last Modified time: 2016-09-19 20:22:01
+ * @Last Modified by:   kevin
+ * @Last Modified time: 2016-09-04 14:23:46
  */
 
 var Project = (function () {
@@ -36,8 +36,8 @@ var Project = (function () {
                 type: 'POST',
                 data: sendData,
                 beforeSend: function () {
-                    // lnv.pageloading();
-                    lnv.iconloading('#submit_btn');
+                    lnv.pageloading();
+                    // lnv.iconloading('#submit_btn');
                 }
             })
             .done(function (res) {
@@ -78,8 +78,8 @@ var Project = (function () {
             })
             .always(function () {
 
-                // lnv.destroyloading();
-                lnv.destroyloading('#submit_btn');
+                lnv.destroyloading();
+                // lnv.destroyloading('#submit_btn');
 
                 me.removeClass('disabled');
 
